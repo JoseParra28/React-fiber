@@ -4,6 +4,7 @@ import { Navbar } from './Components/Navbar'
 import { HeroSection } from './Components/HeroSection'
 import HeroModel from './Models/HeroModels'
 import AboutContent from './Components/AboutContent'
+import { Card } from './Components/Card'
 
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
   return (
     <>
      {/* <HeroSection/> */}
-    <AboutContent/>
-    
+    {/* <AboutContent/> */}
+    <Card/>
     </>
   )
 }
