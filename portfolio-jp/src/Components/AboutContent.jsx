@@ -1,6 +1,7 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import React, { useRef } from "react"
 import { motion } from "framer-motion";
+import AboutModel from "../Models/AboutModel";
 
 const AboutContent = () => {
     return(
@@ -54,6 +55,7 @@ const AboutContent = () => {
                 </div>
             </div>
             </div>
+            <AboutModel/>
       </section>
         </>
     )

@@ -37,7 +37,7 @@
     left: 8%;
     z-index: 3;
     position: absolute;
-    margin: 2%;
+    margin: 1%;
     width: 30%;
     padding: 1%;
     border: 1px solid #96cf24;
@@ -47,7 +47,7 @@
   }
   
   .skills {
-    top: 50%;
+    top: 45%;
   }
   @keyframes appear {
     from {
