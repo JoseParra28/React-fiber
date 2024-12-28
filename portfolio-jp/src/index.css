@@ -1,0 +1,103 @@
+:root {
+    --font-color: #96cf24;
+    --font-white: #ffffff;
+    --background: #040404;
+  }
+  
+  html {
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #040404;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:var(--font-color);
+  }
+  /* NAVBAR */
+  .nav {
+    /* display: none; */
+    height: 96vh;
+    width: 380px;
+    background-color: rgb(105, 104, 104);
+    position: absolute;
+    z-index: 3;
+    resize: both;
+    right: 0%;
+  }
+  .nav, ul, li, a{
+    text-align: end;
+    text-decoration: none;
+    list-style: none;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .navbar-logo {
+    display: flex;
+    justify-content: space-around;
+  /* padding: 30px;
+  padding-right: 60px; */
+  }
+  ul {
+    padding: 30px;
+  }
+  li {
+    padding: 20px;
+  }
+  .social-media {
+    display: flex;
+  }
+  h1, h2 {
+    filter: blur(1px);
+  }
+
+  /* BUTTON */
+  button {
+    padding: 15px;
+    border: solid 1px #96cf24;
+    background-color: var(--background);
+    color: var(--font-color) ;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: var(--font-color);
+    color: var(--background);
+  }
+  /* SECTION */
+  section {
+    height: 100vh;
+    position: relative;
+    max-width: auto;
+  }
+  /* MODELS */
+  canvas {
+    height: 100vh;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+    /* position: relative; */
+  
+  }
+  iframe {
+    position: relative;
+    z-index: 2;
+  }
+  @media screen and (max-width:950px){
+  canvas{
+    height: 60vh;
+    touch-action: none;
+  }
+  }
+  .htmlScreen iframe {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 1px;
+  background-color: black;
+  color: rgb(173, 18, 18);
+  }
+
+

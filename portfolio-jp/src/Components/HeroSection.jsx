@@ -1,4 +1,4 @@
-
+import HeroModel from "../Models/HeroModels"
 
 export const HeroSection = () =>{
     return (
@@ -11,7 +11,7 @@ export const HeroSection = () =>{
                 </div>
                 
             </div>
-            {/* <HeroModel/> */}
+            <HeroModel/>
         </section>
     )
 }
