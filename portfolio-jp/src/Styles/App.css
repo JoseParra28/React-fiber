@@ -32,7 +32,7 @@
 
   /* ABOUT  */
   
-  /* .container {
+  .container {
     top: 10%;
     left: 8%;
     z-index: 3;
@@ -44,7 +44,7 @@
   }
   .container p {
   font-size: 1rem;
-  } */
+  }
   
   .skills {
     top: 50%;
