@@ -24,6 +24,30 @@ const projects = [
     languageTwo: 'CSS',
     languageThree: 'Javascript',
     languageFour: 'Python',
+    description: 'My very first website',
+    gitLink: 'https://www.npmjs.com/package/react-external-link',
+    livePreview: '/'
+},
+{
+    pic: runway,
+    id: 'RunwayModels',
+    title: "Runway Models",
+    languageOne: 'HTML',
+    languageTwo: 'CSS',
+    languageThree: 'Javascript',
+    languageFour: 'Python',
+    description: 'My very first website',
+    gitLink: 'https://www.npmjs.com/package/react-external-link',
+    livePreview: '/'
+},
+{
+    pic: runway,
+    id: 'RunwayModels',
+    title: "Runway Models",
+    languageOne: 'HTML',
+    languageTwo: 'CSS',
+    languageThree: 'Javascript',
+    languageFour: 'Python',
     description: 'My very first websitena, jknbcsiuabf  iusoif   jkfbiuewhfowefj uiwekhfonfljhaof8hab',
     gitLink: 'https://github.com/JoseParra28/runway-models-final-project?tab=readme-ov-file',
     livePreview: "https://joseparra28.github.io/runway-models-final-project/"
@@ -35,7 +59,7 @@ export const Card = () => {
     return (
         <section>
             <div className="card-wrapper">
-        {projects.map((project, index) => {
+            {projects.map((project, index) => {
             return ( <>                
                 <div key={project.id} className="card">
             <div className="image">
@@ -59,12 +83,10 @@ export const Card = () => {
                 </div>
             </div>
            </div>
-           
            </>
-
             )
         })}
-        </div>
+            </div>
         </section>
     )
 }
