@@ -4,20 +4,8 @@ import runway from '../assets/runway.png'
 import '../Styles/card.css'
 
 const projects = [
-//     {
-//     pic: '../assets/close.svg',
-//     id: 'RunwayModels',
-//     title: "Runway Models",
-//     languageOne: 'HTML',
-//     languageTwo: 'CSS',
-//     languageThree: 'Javascript',
-//     languageFour: 'Python',
-//     description: 'My very first website',
-//     gitLink: 'https://www.npmjs.com/package/react-external-link',
-//     livePreview: '/'
-// },
-{
-    pic: {runway},
+    {
+    pic: runway,
     id: 'RunwayModels',
     title: "Runway Models",
     languageOne: 'HTML',
@@ -25,6 +13,18 @@ const projects = [
     languageThree: 'Javascript',
     languageFour: 'Python',
     description: 'My very first website',
+    gitLink: 'https://www.npmjs.com/package/react-external-link',
+    livePreview: '/'
+},
+{
+    pic: runway,
+    id: 'RunwayModels',
+    title: "Runway Models",
+    languageOne: 'HTML',
+    languageTwo: 'CSS',
+    languageThree: 'Javascript',
+    languageFour: 'Python',
+    description: 'My very first websitena, jknbcsiuabf  iusoif   jkfbiuewhfowefj uiwekhfonfljhaof8hab',
     gitLink: 'https://github.com/JoseParra28/runway-models-final-project?tab=readme-ov-file',
     livePreview: "https://joseparra28.github.io/runway-models-final-project/"
 }
@@ -34,19 +34,19 @@ export const Card = () => {
 
     return (
         <section>
-            
+            <div className="card-wrapper">
         {projects.map((project, index) => {
-            return ( <>                <div className="card-wrapper">
+            return ( <>                
                 <div key={project.id} className="card">
             <div className="image">
-                <img src={runway} alt="project photo" />
+                <img src={project.pic} alt="project photo" />
             </div>
             <div className="card-content">
                 <h3>{project.title}</h3>
-                <span>{project.languageOne}</span>
-                <span>{project.languageTwo}</span>
-                <span>{project.languageThree}</span>
-                <span>{project.languageFour}</span>
+                <span className="language">{project.languageOne}</span>
+                <span className="language">{project.languageTwo}</span>
+                <span className="language">{project.languageThree}</span>
+                <span className="language">{project.languageFour}</span>
                 <p>{project.description}</p>
                 <div className="card-btns">
                 <ExternalLink href={project.gitLink} className="btn">
@@ -59,11 +59,12 @@ export const Card = () => {
                 </div>
             </div>
            </div>
-           </div>
+           
            </>
 
             )
         })}
+        </div>
         </section>
     )
 }
