@@ -1,18 +1,21 @@
 import { Link, NavLink, Router } from "react-router-dom"
 import { ExternalLink } from 'react-external-link';
+import menu from '../assets/menu.svg'
+import '../Styles/card.css'
+
 const projects = [
-    {
-    pic: '../assets/menu.svg',
-    id: 'RunwayModels',
-    title: "Runway Models",
-    languageOne: 'HTML',
-    languageTwo: 'CSS',
-    languageThree: 'Javascript',
-    languageFour: 'Python',
-    description: 'My very first website',
-    gitLink: 'https://www.npmjs.com/package/react-external-link',
-    livePreview: '/'
-},
+//     {
+//     pic: '../assets/close.svg',
+//     id: 'RunwayModels',
+//     title: "Runway Models",
+//     languageOne: 'HTML',
+//     languageTwo: 'CSS',
+//     languageThree: 'Javascript',
+//     languageFour: 'Python',
+//     description: 'My very first website',
+//     gitLink: 'https://www.npmjs.com/package/react-external-link',
+//     livePreview: '/'
+// },
 {
     pic: '../assets/menu.svg',
     id: 'RunwayModels',
@@ -36,7 +39,7 @@ export const Card = () => {
             return (
                 <div key={project.id} className="card">
             <div className="image">
-                <img src={project.pic} alt="" />image
+                <img src={menu} alt="project photo" />
             </div>
             <div className="card-content">
                 <h3>{project.title}</h3>
@@ -46,10 +49,10 @@ export const Card = () => {
                 <span>{project.languageFour}</span>
                 <p>{project.description}</p>
                 <div className="card-btns">
-                <ExternalLink href={project.gitLink} >
+                <ExternalLink href={project.gitLink} className="btn">
                   <span>Gitbub</span>
                   </ExternalLink>
-                  <ExternalLink href={project.livePreview} >
+                  <ExternalLink href={project.livePreview} className="btn" >
                   <span>Live previw</span>
                   </ExternalLink>
                   

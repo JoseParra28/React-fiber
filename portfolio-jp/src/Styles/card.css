@@ -1,0 +1,19 @@
+.card {
+    background-color: red;
+    width: 20%;
+    height:40%;
+    position: relative;
+}
+.image, .image img  {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+
+}
+.card-content{
+    margin: 3%;
+}
+.card-btns {
+    display: flex;
+    justify-content: space-around;
+}

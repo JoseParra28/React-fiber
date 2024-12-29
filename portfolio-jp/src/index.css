@@ -65,6 +65,17 @@
     background-color: var(--font-color);
     color: var(--background);
   }
+  .btn{
+    padding: 15px;
+    border: solid 1px #96cf24;
+    background-color: var(--background);
+    color: var(--font-color) ;
+    font-size: 1rem;
+  }
+  .btn:hover {
+    background-color: var(--font-color);
+    color: var(--background);
+  }
   /* SECTION */
   section {
     height: 100vh;
