@@ -33,11 +33,9 @@
 } */
  .language {
     font-size: 0.7rem;
-    border-radius: 20px;
     margin-right: 3px;
     padding: 5px;
     color: #666666;
-    border: solid 1px #666666 ;
  }
  .card-btns {
     display: flex;

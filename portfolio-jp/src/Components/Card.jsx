@@ -1,16 +1,40 @@
 import { Link, NavLink, Router } from "react-router-dom"
 import { ExternalLink } from 'react-external-link';
 import runway from '../assets/runway.png'
+import sebastian from '../assets/sebastian.png'
+import python from '../assets/python.png'
+import oblivious from '../assets/oblivious.png'
 import '../Styles/card.css'
 
 const projects = [
     {
-    pic: runway,
-    id: 'RunwayModels',
+    pic: sebastian,
+    id: 'sebastian',
     title: "Runway Models",
     languageOne: 'HTML',
     languageTwo: 'CSS',
     languageThree: 'Javascript',
+    description: 'My very first website',
+    gitLink: 'https://github.com/JoseParra28/SEBASTIAN',
+    livePreview: 'https://joseparra28.github.io/SEBASTIAN/index.html'
+},
+{
+    pic: oblivious,
+    id: 'ObliviousBakery',
+    title: "Oblivious Bakery",
+    languageOne: 'HTML',
+    languageTwo: 'CSS',
+    languageThree: 'Javascript',
+    languageFour: 'Python',
+    api: 'API',
+    description: 'Backend website ',
+    gitLink: 'https://www.npmjs.com/package/react-external-link',
+    livePreview: '/'
+},
+{
+    pic: python,
+    id: 'python',
+    title: "Python Project",
     languageFour: 'Python',
     description: 'My very first website',
     gitLink: 'https://www.npmjs.com/package/react-external-link',
@@ -22,32 +46,6 @@ const projects = [
     title: "Runway Models",
     languageOne: 'HTML',
     languageTwo: 'CSS',
-    languageThree: 'Javascript',
-    languageFour: 'Python',
-    description: 'My very first website',
-    gitLink: 'https://www.npmjs.com/package/react-external-link',
-    livePreview: '/'
-},
-{
-    pic: runway,
-    id: 'RunwayModels',
-    title: "Runway Models",
-    languageOne: 'HTML',
-    languageTwo: 'CSS',
-    languageThree: 'Javascript',
-    languageFour: 'Python',
-    description: 'My very first website',
-    gitLink: 'https://www.npmjs.com/package/react-external-link',
-    livePreview: '/'
-},
-{
-    pic: runway,
-    id: 'RunwayModels',
-    title: "Runway Models",
-    languageOne: 'HTML',
-    languageTwo: 'CSS',
-    languageThree: 'Javascript',
-    languageFour: 'Python',
     description: 'My very first websitena, jknbcsiuabf  iusoif   jkfbiuewhfowefj uiwekhfonfljhaof8hab',
     gitLink: 'https://github.com/JoseParra28/runway-models-final-project?tab=readme-ov-file',
     livePreview: "https://joseparra28.github.io/runway-models-final-project/"
@@ -67,10 +65,11 @@ export const Card = () => {
             </div>
             <div className="card-content">
                 <h3>{project.title}</h3>
+                <span className="language">{project.languageFour}</span>
                 <span className="language">{project.languageOne}</span>
                 <span className="language">{project.languageTwo}</span>
                 <span className="language">{project.languageThree}</span>
-                <span className="language">{project.languageFour}</span>
+                <span className="language">{project.api}</span>
                 <p>{project.description}</p>
                 <div className="card-btns">
                 <ExternalLink href={project.gitLink} className="code-btn">
