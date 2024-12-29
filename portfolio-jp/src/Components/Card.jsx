@@ -73,20 +73,22 @@ export const Card = () => {
                 <span className="language">{project.languageFour}</span>
                 <p>{project.description}</p>
                 <div className="card-btns">
-                <ExternalLink href={project.gitLink} className="btn">
-                  <span>Gitbub</span>
+                <ExternalLink href={project.gitLink} className="code-btn">
+                  <span className="code"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#696868"><path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg></span>
                   </ExternalLink>
                   <ExternalLink href={project.livePreview} className="btn" >
-                  <span>Live previw</span>
+                  <span className="live">Live preview</span>
                   </ExternalLink>
                   
                 </div>
             </div>
            </div>
+           
            </>
             )
         })}
             </div>
+            
         </section>
     )
 }

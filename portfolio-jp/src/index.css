@@ -19,7 +19,7 @@
     /* display: none; */
     height: 96vh;
     width: 380px;
-    background-color: rgb(105, 104, 104);
+    background-color: #696868;
     position: absolute;
     z-index: 3;
     resize: both;
@@ -66,12 +66,21 @@
     color: var(--background);
   }
   .btn{
-    padding: 15px;
-    border: solid 1px #96cf24;
+    border: solid 1px #96cf24; 
     background-color: var(--background);
     color: var(--font-color) ;
-    font-size: 1rem;
+    font-size: 1rem; 
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
   }
+ 
   .btn:hover {
     background-color: var(--font-color);
     color: var(--background);

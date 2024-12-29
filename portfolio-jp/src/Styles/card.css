@@ -1,16 +1,16 @@
 .card-wrapper {
-   /* filter: blur(10px); */
-   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
-   0 6px 20px rgba(0, 0, 0, 0.15);
+   backdrop-filter: ;
    z-index: 1;
    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
 }
 
 .card {
-    left: 20%;
     border:  solid 1px;
     width: 20%;
-    position: absolute;
+    position: relative;
     padding: 1%;
     filter: none;   
     z-index: 1;
@@ -39,7 +39,27 @@
     color: #666666;
     border: solid 1px #666666 ;
  }
-.card-btns {
+ .card-btns {
     display: flex;
     justify-content: space-around;
+}
+
+.code-btn{
+border: solid 1px #96cf24; 
+background-color: var(--background);
+color: var(--font-color) ;
+font-size: 1rem; 
+display: block;
+width: 40px;
+height: 40px;
+line-height: 40px;
+font-size: 18px;
+text-decoration: none;
+text-align: center;
+position: relative;
+transition: all .35s;
+}
+.code-btn:hover {
+background-color: var(--font-color);
+color: var(--background);
 }
