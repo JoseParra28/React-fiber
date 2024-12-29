@@ -1,6 +1,6 @@
 import { Link, NavLink, Router } from "react-router-dom"
 import { ExternalLink } from 'react-external-link';
-import menu from '../assets/menu.svg'
+import runway from '../assets/runway.png'
 import '../Styles/card.css'
 
 const projects = [
@@ -17,7 +17,7 @@ const projects = [
 //     livePreview: '/'
 // },
 {
-    pic: '../assets/menu.svg',
+    pic: {runway},
     id: 'RunwayModels',
     title: "Runway Models",
     languageOne: 'HTML',
@@ -36,10 +36,10 @@ export const Card = () => {
         <section>
             
         {projects.map((project, index) => {
-            return (
+            return ( <>                <div className="card-wrapper">
                 <div key={project.id} className="card">
             <div className="image">
-                <img src={menu} alt="project photo" />
+                <img src={runway} alt="project photo" />
             </div>
             <div className="card-content">
                 <h3>{project.title}</h3>
@@ -59,6 +59,9 @@ export const Card = () => {
                 </div>
             </div>
            </div>
+           </div>
+           </>
+
             )
         })}
         </section>
