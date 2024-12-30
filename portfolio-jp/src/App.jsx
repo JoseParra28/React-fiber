@@ -17,7 +17,7 @@ function App() {
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
     {/* <AboutContent/> */}
-    <Card/>
+    {/* <Card/> */}
     <Contact/>
     {/* <MyModel/> */}
     </>
