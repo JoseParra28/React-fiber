@@ -18,17 +18,17 @@ export const MyModel = () => {
         <color args={['#040404']} attach="background"/>   
         <mesh >
         
-     <OrbitControls/>
+     {/* <OrbitControls/> */}
+     <PresentationControls  global rotation={[0.13, 0, 0]} >
+        <Float>
   <primitive 
-  object={myModel.scene}
-  position={[-10, 0,0]}
-  rotation-y={26}
-  scale={1.3}
-  > 
+  object={myModel.scene} position={[-28,-5,-29]} rotation-y={-2.2} scale={1.9}>
   </primitive>
-  
- 
+  </Float>
+  </PresentationControls>
+  <ContactShadows  position-y={-1.4} opacity={0.4} scale={20} blur={3} color={"#aba6a6"}/>
         </mesh>
+        
     </Canvas>
 
 
