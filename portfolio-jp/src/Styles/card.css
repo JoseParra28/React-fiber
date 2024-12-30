@@ -8,12 +8,14 @@
 }
 
 .card {
-    border:  solid 1px;
+    border-radius: 2% ;
     width: 20%;
     position: relative;
     padding: 1%;
     filter: none;   
     z-index: 1;
+    backdrop-filter: blur(6px);
+    background: rgba(74, 76, 77, 0.378);
 
 }
 .image, .image img  {
