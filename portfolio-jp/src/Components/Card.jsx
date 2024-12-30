@@ -10,7 +10,7 @@ const projects = [
     {
     pic: sebastian,
     id: 'sebastian',
-    title: "Runway Models",
+    title: "Sebastian",
     languageOne: 'HTML',
     languageTwo: 'CSS',
     languageThree: 'Javascript',
@@ -65,11 +65,11 @@ export const Card = () => {
             </div>
             <div className="card-content">
                 <h3>{project.title}</h3>
-                <span className="language">{project.languageFour}</span>
-                <span className="language">{project.languageOne}</span>
-                <span className="language">{project.languageTwo}</span>
-                <span className="language">{project.languageThree}</span>
-                <span className="language">{project.api}</span>
+                <span className="language python">{project.languageFour}</span>
+                <span className="language html">{project.languageOne}</span>
+                <span className="language css">{project.languageTwo}</span>
+                <span className="language js">{project.languageThree}</span>
+                <span className="language api">{project.api}</span>
                 <p>{project.description}</p>
                 <div className="card-btns">
                 <ExternalLink href={project.gitLink} className="code-btn">

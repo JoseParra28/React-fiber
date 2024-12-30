@@ -1,5 +1,4 @@
 .card-wrapper {
-   backdrop-filter: ;
    z-index: 1;
    display: flex;
    flex-wrap: wrap;
@@ -30,15 +29,27 @@
     margin: 3%;
     width: 100%;
 }
-/* .card-content h3,span, p {
-    margin-left: 2%;
-} */
+
  .language {
     font-size: 0.7rem;
     margin-right: 3px;
     padding: 5px;
     color: #666666;
  }
+
+ .js{
+    color: #FFB800;
+ }
+ .python{
+    color: #0617b2;
+ }
+ .api{
+    color: #CA49F8;
+ }
+ .web {
+    color: #5A69EC;
+ }
+ 
  .card-btns {
     display: flex;
     justify-content: space-around;

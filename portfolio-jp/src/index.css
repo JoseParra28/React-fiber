@@ -52,6 +52,9 @@
   h1, h2 {
     filter: blur(1px);
   }
+  h3{
+    filter: blur(0.7px);
+  }
 
   /* BUTTON */
   button {
