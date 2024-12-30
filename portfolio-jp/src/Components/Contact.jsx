@@ -1,4 +1,4 @@
-
+import '../Styles/contact.css'
 
 const Contact = () => {
 
@@ -18,7 +18,7 @@ const Contact = () => {
             <input type="email" id="email" name="email" required />
             
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6"></textarea>
+            <textarea type="text" id="message" name="message" rows="6"></textarea>
                 
                        <button type="submit">Submit</button> 
             </form>
