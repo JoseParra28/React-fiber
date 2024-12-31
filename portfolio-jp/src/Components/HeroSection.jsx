@@ -1,3 +1,4 @@
+import EarthCanvas from "../Models/Earth"
 import HeroModel from "../Models/HeroModels"
 import StarsCanvas from "../Models/Stars"
 
@@ -12,7 +13,8 @@ export const HeroSection = () =>{
                 </div>
                 
             </div>
-            <HeroModel/>
+            {/* <HeroModel/> */}
+            
         </section>
     )
 }

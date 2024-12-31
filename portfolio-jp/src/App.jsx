@@ -18,8 +18,8 @@ function App() {
     <>
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
-    <AboutContent/>
-    {/* <Card/> */}
+    {/* <AboutContent/> */}
+    <Card/>
     {/* <Contact/> */}
     {/* <EarthCanvas/> */}
     {/* <StarsCanvas/> */}

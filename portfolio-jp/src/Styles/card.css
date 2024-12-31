@@ -36,7 +36,10 @@
     padding: 5px;
     color: #666666;
  }
- 
+ .card-btns {
+   display: flex;
+   justify-content: space-around;
+ }
 .code-btn{
 border: solid 1px #96cf24; 
 background-color: var(--background);
