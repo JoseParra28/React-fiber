@@ -62,6 +62,7 @@ const AboutModel = ()=>{
       blur={3}
       color={"#aba6a6"}
       />
+      
             </mesh>
         </Canvas>
     

@@ -1,44 +1,27 @@
-import {React, useEffect, useState, Suspense} from "react"
-import { Canvas, useFrame } from "@react-three/fiber"
-import { Points, PointMaterial, Preload } from "@react-three/drei"
-import * as random from "maath/random/dist/maath-random.esm";
+import { Suspense } from "react"
+import { Canvas } from "@react-three/fiber"
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import CanvasLoader from "./Loader"
+import EarthCanvas from "./Earth"
 
-const Stars = (props) => {
-    const ref = useRef();
-    const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
-  
-    useFrame((state, delta) => {
-      ref.current.rotation.x -= delta / 10;
-      ref.current.rotation.y -= delta / 15;
-    });
-  
+
+const Stars = () => {
+    const stars = useGLTF('./stars/scene.gltf')
+
     return (
-      <group rotation={[0, 0, Math.PI / 4]}>
-        <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
-          <PointMaterial
-            transparent
-            color='#f272c8'
-            size={0.002}
-            sizeAttenuation={true}
-            depthWrite={false}
-          />
-        </Points>
-      </group>
-    );
-  };
-  
-  const StarsCanvas = () => {
+        <primitive object={stars.scene} scale={0.5} position-y={0} rotation-y={0}/>
+    )
+}
+ const StarsCanvas = () => {
     return (
-      <div className="stars-div">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <Suspense fallback={null}>
-            <Stars />
-          </Suspense>
-  
-          <Preload all />
+        <Canvas shadows frameloop="demand" gl={{preserveDrawingBuffer: true}} camera={{fov:45, near:0.1, far:200, position:[-4, 3, 6]}}> 
+        <Suspense fallback={<CanvasLoader/>}>
+        <OrbitControls autoRotate enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2}/>
+        <Stars/>
+        <EarthCanvas/>
+        </Suspense>
         </Canvas>
-      </div>
-    );
-  };
-  
-  export default StarsCanvas;
+    )
+ }
+
+export default StarsCanvas

@@ -18,11 +18,11 @@ function App() {
     <>
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
-    {/* <AboutContent/> */}
+    <AboutContent/>
     {/* <Card/> */}
     {/* <Contact/> */}
     {/* <EarthCanvas/> */}
-    <StarsCanvas/>
+    {/* <StarsCanvas/> */}
     {/* <MyModel/> */}
     </>
   )

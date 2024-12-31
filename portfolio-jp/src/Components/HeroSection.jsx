@@ -1,4 +1,5 @@
 import HeroModel from "../Models/HeroModels"
+import StarsCanvas from "../Models/Stars"
 
 export const HeroSection = () =>{
     return (
