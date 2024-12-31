@@ -7,6 +7,7 @@ import AboutContent from './Components/AboutContent'
 import { Card } from './Components/Card'
 import { MyModel } from './Models/MyModel'
 import Contact from './Components/Contact'
+import EarthCanvas from './Models/Earth'
 
 
 
@@ -17,8 +18,9 @@ function App() {
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
     {/* <AboutContent/> */}
-    <Card/>
-    <Contact/>
+    {/* <Card/> */}
+    {/* <Contact/> */}
+    <EarthCanvas/>
     {/* <MyModel/> */}
     </>
   )
