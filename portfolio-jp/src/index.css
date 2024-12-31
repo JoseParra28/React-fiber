@@ -17,6 +17,12 @@
   p {
     color: var(--font-white);
   }
+  /* SUBNAV */
+.subnav {
+  width: 100%;
+  height: 10vh;
+  background-color: red;
+}
   /* NAVBAR */
   .nav {
     /* display: none; */

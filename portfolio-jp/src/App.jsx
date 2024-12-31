@@ -8,6 +8,8 @@ import { Card } from './Components/Card'
 import { MyModel } from './Models/MyModel'
 import Contact from './Components/Contact'
 import EarthCanvas from './Models/Earth'
+import { navbar } from './js'
+import { SubNav } from './Components/Subnav'
 
 
 
@@ -16,9 +18,10 @@ function App() {
 
   return (
     <>
+    <SubNav/>
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
-    <AboutContent/>
+    {/* <AboutContent/> */}
     {/* <Card/> */}
     {/* <Contact/> */}
     {/* <EarthCanvas/> */}
