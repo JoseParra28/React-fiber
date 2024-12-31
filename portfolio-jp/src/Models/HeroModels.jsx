@@ -29,7 +29,7 @@ const HeroModel = () => {
         })
         return (
             <mesh position={position} ref={ref}> 
-                <boxGeometry args={[1.4, 1.4, 1.4]}/>
+                <boxGeometry args={[1.2, 1.2, 1.2]}/>
                 <MeshTransmissionMaterial {...materialProps} />
                 <meshStandardMaterial color={color}  />
             </mesh>
@@ -51,7 +51,7 @@ const HeroModel = () => {
         return (
             <mesh position={position} ref={ref}> 
                 {/* <torusGeometry args={size}/> */}
-                <boxGeometry args={[2,2,2]}/>
+                <boxGeometry args={[1,1,1]}/>
                 <MeshTransmissionMaterial {...materialProps} />
                 <meshStandardMaterial color={color}  />
             </mesh>
@@ -83,13 +83,13 @@ const HeroModel = () => {
 
         <PresentationControls>
             <Float>
-            <Sphere position={-1, 2,-3}/>
+            {/* <Sphere position={-1, 2,-3}/> */}
             </Float>
         </PresentationControls>
 
         <PresentationControls>
             <Float>
-            <Sphere position={-1, 2, 1}/>
+            {/* <Sphere position={-2, -3, 1} /> */}
             </Float>
         </PresentationControls>
        

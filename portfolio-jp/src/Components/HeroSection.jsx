@@ -13,7 +13,7 @@ export const HeroSection = () =>{
                 </div>
                 
             </div>
-            {/* <HeroModel/> */}
+            <HeroModel/>
             
         </section>
     )

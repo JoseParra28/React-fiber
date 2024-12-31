@@ -3,6 +3,10 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
+   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+   grid-template-columns: repeat(auto-fit, minmax(250px, 12fr));
+   /* grid-gap: 30px; */
+   columns: 2;
    
 }
 
@@ -10,11 +14,12 @@
     border-radius: 3% ;
     width: 20%;
     position: relative;
-    padding: 1%;
-    filter: none;   
+    padding: 1%; 
     z-index: 1;
+    margin: 31px auto 50px;
     box-shadow: 0 0 10px rgba(240, 235, 235, 0.2);
     background-color: rgba(42, 41, 41, 0.2);
+
 
 }
 .image, .image img  {

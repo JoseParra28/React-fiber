@@ -18,9 +18,9 @@ function App() {
     <>
     {/* <Navbar/> */}
      {/* <HeroSection/> */}
-    {/* <AboutContent/> */}
+    <AboutContent/>
     {/* <Card/> */}
-    <Contact/>
+    {/* <Contact/> */}
     {/* <EarthCanvas/> */}
     {/* <StarsCanvas/> */}
     {/* <MyModel/> */}
