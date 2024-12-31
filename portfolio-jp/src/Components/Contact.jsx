@@ -63,6 +63,7 @@ const Contact = () => {
     return (
 
        <section>
+        <div className="containers">
         <div>
             <h1>Let's get in touch</h1>
         </div>
@@ -86,6 +87,9 @@ const Contact = () => {
         <div className='earth-div'>
 
         </div>
+        </div>
+        <EarthCanvas/>
+
        </section>
       
     )

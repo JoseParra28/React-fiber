@@ -40,10 +40,17 @@
     margin: 1%;
     width: 30%;
     padding: 1%;
-    /* border: 1px solid #96cf24; */
     border-radius: 3%;
     box-shadow: 0 0 10px rgba(240, 235, 235, 0.2);
     background-color: rgba(42, 41, 41, 0.2);
+  }
+  .containers {
+    top: 10%;
+    left: 8%;
+    position: absolute;
+    margin: 1%;
+    width: 100%;
+    z-index: 2;
   }
   .container p {
   font-size: 1rem;
