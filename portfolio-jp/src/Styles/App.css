@@ -2,7 +2,7 @@
 
 :root {
     --font-color: #96cf24;
-    --font-white: #ffffff;
+    --font-white: #959292;
     --background: #040404;
   }
 
@@ -31,10 +31,7 @@
   } */
 
   /* ABOUT  */
-  .wrapper {
-    background-color: red;
-    width: 100%;
-  }
+  
   .container {
     top: 10%;
     left: 8%;
@@ -101,5 +98,5 @@
     width: 28%;
   }
   .python {
-    width: 50%;
+    width: 30%;
   }
