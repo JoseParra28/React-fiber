@@ -8,6 +8,7 @@ import { Card } from './Components/Card'
 import { MyModel } from './Models/MyModel'
 import Contact from './Components/Contact'
 import EarthCanvas from './Models/Earth'
+import StarsCanvas from './Models/Stars'
 
 
 
@@ -20,7 +21,8 @@ function App() {
     {/* <AboutContent/> */}
     {/* <Card/> */}
     {/* <Contact/> */}
-    <EarthCanvas/>
+    {/* <EarthCanvas/> */}
+    <StarsCanvas/>
     {/* <MyModel/> */}
     </>
   )
