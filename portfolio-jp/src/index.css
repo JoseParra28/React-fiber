@@ -63,7 +63,9 @@
   button {
     padding: 15px;
     border: solid 1px #96cf24;
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    box-shadow: 0 0 10px rgba(240, 235, 235, 0.2);
+    background-color: rgba(42, 41, 41, 0.2);
     color: var(--font-color) ;
     font-size: 1rem;
   }
@@ -73,7 +75,9 @@
   }
   .btn{
     border: solid 1px #96cf24; 
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    box-shadow: 0 0 10px rgba(240, 235, 235, 0.2);
+    background-color: rgba(42, 41, 41, 0.2);
     color: var(--font-color) ;
     font-size: 1rem; 
     display: block;
