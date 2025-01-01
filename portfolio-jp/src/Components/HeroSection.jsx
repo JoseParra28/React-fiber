@@ -4,7 +4,7 @@ import StarsCanvas from "../Models/Stars"
 
 export const HeroSection = () =>{
     return (
-        <section>
+        <section id="hero">
             <div className="hero-content">
                 <div>
                     <h1>Hi, I'm Jose</h1>

@@ -11,7 +11,7 @@ const AboutModel = ()=>{
 
 
     return (
-        <section>
+        <section id="about">
         <Canvas className="about-canvas">
             <Environment preset="city"/>
             <color args={['#040404']} attach="background"/>   

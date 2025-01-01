@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-    <SubNav/>
-    {/* <Navbar/> */}
+    {/* <SubNav/> */}
+    <Navbar/>
      {/* <HeroSection/> */}
     {/* <AboutContent/> */}
     {/* <Card/> */}
