@@ -20,10 +20,10 @@ function App() {
     <>
     <SubNav/>
     {/* <Navbar/> */}
-     {/* <HeroSection/> */}
+     <HeroSection/>
     {/* <AboutContent/> */}
-    {/* <Card/> */}
-    {/* <Contact/> */}
+    <Card/>
+    <Contact/>
     {/* <EarthCanvas/> */}
     {/* <StarsCanvas/> */}
     {/* <MyModel/> */}

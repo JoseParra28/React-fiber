@@ -1,7 +1,8 @@
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
-import React, { useRef } from "react"
+import React, { useRef, Suspense } from "react"
 import {Html, ContactShadows, Environment, Float, PresentationControls,  useGLTF, Text, MeshTransmissionMaterial, ScrollControls, useScroll } from "@react-three/drei"
 import { useControls } from 'leva'
+import CanvasLoader from "./Loader"
 
 
 const HeroModel = () => {
@@ -62,7 +63,7 @@ const HeroModel = () => {
         return (
             <>
             <directionalLight intensity={3} position={0, 3, 2}/>
-            <Environment preset="night"/>
+            <Environment preset="dawn"/>
             <color args={['#040404']} attach="background"/>
             </>
         )
@@ -73,27 +74,16 @@ const HeroModel = () => {
     return (
         
         <Canvas className="hero-canvas" >
-            <ScrollControls>
+            <Suspense fallback={<CanvasLoader/>}>
+            <ScrollControls pages={0.2}>
            <Scene/>
         <PresentationControls>
         {/* <Float> */}
         <Torus position={[4,0,0]} />
         {/* </Float> */}
-        </PresentationControls>
-
-        <PresentationControls>
-            <Float>
-            {/* <Sphere position={-1, 2,-3}/> */}
-            </Float>
-        </PresentationControls>
-
-        <PresentationControls>
-            <Float>
-            {/* <Sphere position={-2, -3, 1} /> */}
-            </Float>
-        </PresentationControls>
-       
+        </PresentationControls>       
         </ScrollControls>
+        </Suspense>
         </Canvas>
         
 

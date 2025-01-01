@@ -19,7 +19,8 @@
     margin: 31px auto 50px;
     box-shadow: 0 0 10px rgba(240, 235, 235, 0.2);
     background-color: rgba(42, 41, 41, 0.2);
-
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 .image, .image img  {
