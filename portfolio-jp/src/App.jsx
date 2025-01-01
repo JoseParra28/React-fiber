@@ -23,7 +23,7 @@ function App() {
      <HeroSection/>
     {/* <AboutContent/> */}
     <Card/>
-    <Contact/>
+    {/* <Contact/> */}
     {/* <EarthCanvas/> */}
     {/* <StarsCanvas/> */}
     {/* <MyModel/> */}

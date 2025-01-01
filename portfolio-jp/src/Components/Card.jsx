@@ -5,6 +5,7 @@ import sebastian from '../assets/sebastian.png'
 import python from '../assets/python.png'
 import oblivious from '../assets/oblivious.png'
 import '../Styles/card.css'
+import '../Styles/mediaquery.css'
 
 const projects = [
     {
