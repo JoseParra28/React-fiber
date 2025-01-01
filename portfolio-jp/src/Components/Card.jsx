@@ -55,7 +55,7 @@ const projects = [
 export const Card = () => {
 
     return (
-        <section>
+        <section id="work">
             <div className="card-wrapper">
             {projects.map((project, index) => {
             return ( <>                
