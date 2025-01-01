@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --font-color: #96cf24;
     --font-white: #959292;

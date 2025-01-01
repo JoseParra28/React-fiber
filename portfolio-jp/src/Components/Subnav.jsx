@@ -5,8 +5,6 @@ import { Navbar } from './Navbar'
 
 export const SubNav = () => {
 
-    
-
 
     return (
         <div className="subnav">
