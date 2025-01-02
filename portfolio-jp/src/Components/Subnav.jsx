@@ -1,6 +1,6 @@
 import logo from '../assets/logo.png'
 import menu from '../assets/menu.svg'
-import { Navbar } from './Navbar'
+// import { Navbar } from './Navbar'
 
 
 export const SubNav = () => {
